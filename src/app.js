@@ -1,2 +1,6 @@
-const app = require('./config/configExpress')
+const configExpress = require('./config/configExpress')
 
+
+app = configExpress();
+
+app.listen(3000, () => console.log('Server is running'))

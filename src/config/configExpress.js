@@ -1,9 +1,14 @@
 const express = require("express");
+const consign = require("consign");
 
-const app = express();
+module.exports = () => {
+    const app = express();
 
-app.get("/", (req, res) => res.json({ ok: true }));
+    consign()
+        .include('controllers')
+        .into(app)
+    
 
-app.listen(3333, () => console.log("Server is running"));
+    return app;
+}
 
-export { app };
