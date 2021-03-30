@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/WelissonLuca/afrodev_nodejs_initial_api/issues"
   },
-  "homepage": "https://github.com/WelissonLuca/afrodev_nodejs_initial_api#readme"
+  "homepage": "https://github.com/WelissonLuca/afrodev_nodejs_initial_api#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
