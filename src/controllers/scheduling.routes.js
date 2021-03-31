@@ -3,6 +3,8 @@ module.exports = app => {
         res.send('Server ok')
     });
     app.post('/scheduling', (req, res) => {
-        
+        const scheduling = req.body;
+        console.log(scheduling);
+        res.json({ok: true})
     });
 }
