@@ -1,5 +1,5 @@
 const configExpress = require('./config/configExpress')
-const connection = require('./infra/connection');
+const connection = require('./infra/Connection');
 
 app = configExpress();
 connection.connect(err => {
